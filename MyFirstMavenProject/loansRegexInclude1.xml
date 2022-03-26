@@ -6,7 +6,7 @@
 		<class name="loans.HomeLoan1"/>
       	<class name="loans.HomeLoan2">
 			<methods>
-				<exclude name=".*Fraud.*"/>
+				<include name=".*Fraud.*"/>
 			</methods>
  		</class>
 	</classes>

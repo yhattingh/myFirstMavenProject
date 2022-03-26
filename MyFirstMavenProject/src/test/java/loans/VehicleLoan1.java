@@ -6,11 +6,11 @@ public class VehicleLoan1 {
 
 	@Test
 	public void vehicleLoan1() {
-		System.out.println("Vehicle Loan1 for vehicleLoan1");
+		System.out.println("VehicleLoan1.1");
 	}
 
-	@Test
+	@Test(groups = {"Smoke"})
 	public void vehicleLoan2() {
-		System.out.println("Vehicle Loan1 for vehicleLoan2");
+		System.out.println("VehicleLoan1.2");
 	}
 }

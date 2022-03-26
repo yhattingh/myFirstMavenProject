@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+	<suite name="test_suite"> <!-- groups in suite tag -->
+		<groups>
+			<run>
+				<include name="SmokeTest"/>
+				<include name="YH Test"/>
+			</run>
+		</groups>
+		<test name="Personal Loan">
+			<classes>
+				<class name="annotations.Personal_loan"/>
+			</classes>
+		</test>
+		<!-- Test -->
+		<test name="Home Loan">
+			<classes>
+				<class name="annotations.Home_loan"/>
+			</classes>
+		</test>
+		<!-- Test -->
+		<test name="Car Loan">
+			<classes>
+				<class name="annotations.Car_loan"/>
+			</classes>
+		</test>
+		<!-- Test -->
+	</suite>
+	<!-- Suite -->

@@ -6,11 +6,11 @@ public class PersonalLoan1 {
 
 	@Test
 	public void personalLoan1() {
-		System.out.println("Personal Loan1 for personalLoan1");
+		System.out.println("PersonalLoan1.1");
 	}
 
-	@Test
+	@Test (groups = {"Smoke"})
 	public void personalLoan2() {
-		System.out.println("Personal Loan1 for personalLoan2");
+		System.out.println("PersonalLoan1.2");
 	}
 }

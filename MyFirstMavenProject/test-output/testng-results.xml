@@ -1,107 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+<testng-results ignored="1" total="15" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-26T12:33:15 SAST" name="Call all classes under the loans package" finished-at="2022-03-26T12:33:15 SAST" duration-ms="71">
+  <suite started-at="2022-03-26T22:38:09 SAST" name="Testing Parameter on Suite Level" finished-at="2022-03-26T22:38:09 SAST" duration-ms="66">
     <groups>
+      <group name="Regression">
+        <method signature="HomeLoan1.homeLoan2()[pri:0, instance:loans.HomeLoan1@3d74bf60]" name="homeLoan2" class="loans.HomeLoan1"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="HomeLoan1.homeLoan1()[pri:0, instance:loans.HomeLoan1@3d74bf60]" name="homeLoan1" class="loans.HomeLoan1"/>
+        <method signature="HomeLoan2.homeLoan3()[pri:0, instance:loans.HomeLoan2@27ce24aa]" name="homeLoan3" class="loans.HomeLoan2"/>
+        <method signature="PersonalLoan1.personalLoan2()[pri:0, instance:loans.PersonalLoan1@7ed7259e]" name="personalLoan2" class="loans.PersonalLoan1"/>
+        <method signature="VehicleLoan1.vehicleLoan2()[pri:0, instance:loans.VehicleLoan1@7722c3c3]" name="vehicleLoan2" class="loans.VehicleLoan1"/>
+        <method signature="VehicleLoan2.vehicleLoan4()[pri:0, instance:loans.VehicleLoan2@2ef3eef9]" name="vehicleLoan4" class="loans.VehicleLoan2"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2022-03-26T12:33:15 SAST" name="Test" finished-at="2022-03-26T12:33:15 SAST" duration-ms="71">
+    <test started-at="2022-03-26T22:38:09 SAST" name="LoanTests" finished-at="2022-03-26T22:38:09 SAST" duration-ms="66">
       <class name="loans.HomeLoan2">
-        <test-method is-config="true" signature="cleanDBBeforeTest()[pri:0, instance:loans.HomeLoan2@4facf68f]" started-at="2022-03-26T12:33:15 SAST" name="cleanDBBeforeTest" finished-at="2022-03-26T12:33:15 SAST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="cleanDBBeforeTest()[pri:0, instance:loans.HomeLoan2@27ce24aa]" started-at="2022-03-26T22:38:09 SAST" name="cleanDBBeforeTest" finished-at="2022-03-26T22:38:09 SAST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanDBBeforeTest -->
-        <test-method is-config="true" signature="cleanDBBeforeMethod()[pri:0, instance:loans.HomeLoan2@4facf68f]" started-at="2022-03-26T12:33:15 SAST" name="cleanDBBeforeMethod" finished-at="2022-03-26T12:33:15 SAST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanDBBeforeMethod -->
-        <test-method signature="homeLoan3()[pri:0, instance:loans.HomeLoan2@4facf68f]" started-at="2022-03-26T12:33:15 SAST" name="homeLoan3" finished-at="2022-03-26T12:33:15 SAST" duration-ms="1" status="PASS">
+        <test-method signature="homeLoan3()[pri:0, instance:loans.HomeLoan2@27ce24aa]" started-at="2022-03-26T22:38:09 SAST" name="homeLoan3" finished-at="2022-03-26T22:38:09 SAST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homeLoan3 -->
-        <test-method is-config="true" signature="cleanDBBeforeMethod()[pri:0, instance:loans.HomeLoan2@4facf68f]" started-at="2022-03-26T12:33:15 SAST" name="cleanDBBeforeMethod" finished-at="2022-03-26T12:33:15 SAST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="checkSysHealthBefore()[pri:0, instance:loans.HomeLoan2@27ce24aa]" started-at="2022-03-26T22:38:09 SAST" name="checkSysHealthBefore" finished-at="2022-03-26T22:38:09 SAST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cleanDBBeforeMethod -->
-        <test-method signature="homeLoan4()[pri:0, instance:loans.HomeLoan2@4facf68f]" started-at="2022-03-26T12:33:15 SAST" name="homeLoan4" finished-at="2022-03-26T12:33:15 SAST" duration-ms="1" status="PASS">
+        </test-method> <!-- checkSysHealthBefore -->
+        <test-method is-config="true" signature="checkSysHealthBefore()[pri:0, instance:loans.HomeLoan2@27ce24aa]" started-at="2022-03-26T22:38:09 SAST" name="checkSysHealthBefore" finished-at="2022-03-26T22:38:09 SAST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homeLoan4 -->
-        <test-method signature="homeLoanFraudTest()[pri:0, instance:loans.HomeLoan2@4facf68f]" started-at="2022-03-26T12:33:15 SAST" name="homeLoanFraudTest" finished-at="2022-03-26T12:33:15 SAST" duration-ms="2" status="PASS">
+        </test-method> <!-- checkSysHealthBefore -->
+        <test-method signature="homeLoanFraudTest()[pri:0, instance:loans.HomeLoan2@27ce24aa]" started-at="2022-03-26T22:38:09 SAST" name="homeLoanFraudTest" finished-at="2022-03-26T22:38:09 SAST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homeLoanFraudTest -->
-        <test-method is-config="true" signature="cleanDBBeforeMethod()[pri:0, instance:loans.HomeLoan2@4facf68f]" started-at="2022-03-26T12:33:15 SAST" name="cleanDBBeforeMethod" finished-at="2022-03-26T12:33:15 SAST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="checkSysHealthAfter()[pri:0, instance:loans.HomeLoan2@27ce24aa]" started-at="2022-03-26T22:38:09 SAST" name="checkSysHealthAfter" finished-at="2022-03-26T22:38:09 SAST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cleanDBBeforeMethod -->
-        <test-method is-config="true" signature="cleanDBAfterTest()[pri:0, instance:loans.HomeLoan2@4facf68f]" started-at="2022-03-26T12:33:15 SAST" name="cleanDBAfterTest" finished-at="2022-03-26T12:33:15 SAST" duration-ms="0" status="PASS">
+        </test-method> <!-- checkSysHealthAfter -->
+        <test-method is-config="true" signature="checkSysHealthAfter()[pri:0, instance:loans.HomeLoan2@27ce24aa]" started-at="2022-03-26T22:38:09 SAST" name="checkSysHealthAfter" finished-at="2022-03-26T22:38:09 SAST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSysHealthAfter -->
+        <test-method is-config="true" signature="cleanDBAfterTest()[pri:0, instance:loans.HomeLoan2@27ce24aa]" started-at="2022-03-26T22:38:09 SAST" name="cleanDBAfterTest" finished-at="2022-03-26T22:38:09 SAST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanDBAfterTest -->
       </class> <!-- loans.HomeLoan2 -->
       <class name="loans.PersonalLoan2">
-        <test-method signature="personalLoan3()[pri:0, instance:loans.PersonalLoan2@3d74bf60]" started-at="2022-03-26T12:33:15 SAST" name="personalLoan3" finished-at="2022-03-26T12:33:15 SAST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="globalVarsSet1()[pri:0, instance:loans.PersonalLoan2@68999068]" started-at="2022-03-26T22:38:09 SAST" name="globalVarsSet1" finished-at="2022-03-26T22:38:09 SAST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- globalVarsSet1 -->
+        <test-method signature="personalLoan3()[pri:0, instance:loans.PersonalLoan2@68999068]" started-at="2022-03-26T22:38:09 SAST" name="personalLoan3" finished-at="2022-03-26T22:38:09 SAST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- personalLoan3 -->
-        <test-method signature="personalLoan4()[pri:0, instance:loans.PersonalLoan2@3d74bf60]" started-at="2022-03-26T12:33:15 SAST" name="personalLoan4" finished-at="2022-03-26T12:33:15 SAST" duration-ms="1" status="PASS">
+        <test-method signature="personalLoan4()[pri:0, instance:loans.PersonalLoan2@68999068]" started-at="2022-03-26T22:38:09 SAST" name="personalLoan4" finished-at="2022-03-26T22:38:09 SAST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- personalLoan4 -->
-        <test-method signature="personalLoan5()[pri:0, instance:loans.PersonalLoan2@3d74bf60]" started-at="2022-03-26T12:33:15 SAST" name="personalLoan5" finished-at="2022-03-26T12:33:15 SAST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- personalLoan5 -->
       </class> <!-- loans.PersonalLoan2 -->
       <class name="loans.PersonalLoan1">
-        <test-method signature="personalLoan1()[pri:0, instance:loans.PersonalLoan1@76508ed1]" started-at="2022-03-26T12:33:15 SAST" name="personalLoan1" finished-at="2022-03-26T12:33:15 SAST" duration-ms="2" status="PASS">
+        <test-method signature="personalLoan1()[pri:0, instance:loans.PersonalLoan1@7ed7259e]" started-at="2022-03-26T22:38:09 SAST" name="personalLoan1" finished-at="2022-03-26T22:38:09 SAST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- personalLoan1 -->
-        <test-method signature="personalLoan2()[pri:0, instance:loans.PersonalLoan1@76508ed1]" started-at="2022-03-26T12:33:15 SAST" name="personalLoan2" finished-at="2022-03-26T12:33:15 SAST" duration-ms="0" status="PASS">
+        <test-method signature="personalLoan2()[pri:0, instance:loans.PersonalLoan1@7ed7259e]" started-at="2022-03-26T22:38:09 SAST" name="personalLoan2" finished-at="2022-03-26T22:38:09 SAST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- personalLoan2 -->
       </class> <!-- loans.PersonalLoan1 -->
       <class name="loans.VehicleLoan2">
-        <test-method signature="vehicleLoan3()[pri:0, instance:loans.VehicleLoan2@15eb5ee5]" started-at="2022-03-26T12:33:15 SAST" name="vehicleLoan3" finished-at="2022-03-26T12:33:15 SAST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="globalVarsSet2()[pri:0, instance:loans.VehicleLoan2@2ef3eef9]" started-at="2022-03-26T22:38:09 SAST" name="globalVarsSet2" finished-at="2022-03-26T22:38:09 SAST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- globalVarsSet2 -->
+        <test-method signature="vehicleLoan3()[pri:0, instance:loans.VehicleLoan2@2ef3eef9]" started-at="2022-03-26T22:38:09 SAST" name="vehicleLoan3" finished-at="2022-03-26T22:38:09 SAST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vehicleLoan3 -->
-        <test-method signature="vehicleLoan4()[pri:0, instance:loans.VehicleLoan2@15eb5ee5]" started-at="2022-03-26T12:33:15 SAST" name="vehicleLoan4" finished-at="2022-03-26T12:33:15 SAST" duration-ms="1" status="PASS">
+        <test-method signature="vehicleLoan4()[pri:0, instance:loans.VehicleLoan2@2ef3eef9]" started-at="2022-03-26T22:38:09 SAST" name="vehicleLoan4" finished-at="2022-03-26T22:38:09 SAST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vehicleLoan4 -->
-        <test-method signature="vehicleLoan5()[pri:0, instance:loans.VehicleLoan2@15eb5ee5]" started-at="2022-03-26T12:33:15 SAST" name="vehicleLoan5" finished-at="2022-03-26T12:33:15 SAST" duration-ms="1" status="PASS">
+        <test-method signature="vehicleLoan5()[pri:0, instance:loans.VehicleLoan2@2ef3eef9]" started-at="2022-03-26T22:38:09 SAST" name="vehicleLoan5" finished-at="2022-03-26T22:38:09 SAST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vehicleLoan5 -->
+        <test-method is-config="true" signature="resetAllVarsSet()[pri:0, instance:loans.VehicleLoan2@2ef3eef9]" started-at="2022-03-26T22:38:09 SAST" name="resetAllVarsSet" finished-at="2022-03-26T22:38:09 SAST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAllVarsSet -->
       </class> <!-- loans.VehicleLoan2 -->
       <class name="loans.VehicleLoan1">
-        <test-method signature="vehicleLoan1()[pri:0, instance:loans.VehicleLoan1@4f209819]" started-at="2022-03-26T12:33:15 SAST" name="vehicleLoan1" finished-at="2022-03-26T12:33:15 SAST" duration-ms="1" status="PASS">
+        <test-method signature="vehicleLoan1()[pri:0, instance:loans.VehicleLoan1@7722c3c3]" started-at="2022-03-26T22:38:09 SAST" name="vehicleLoan1" finished-at="2022-03-26T22:38:09 SAST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vehicleLoan1 -->
-        <test-method signature="vehicleLoan2()[pri:0, instance:loans.VehicleLoan1@4f209819]" started-at="2022-03-26T12:33:15 SAST" name="vehicleLoan2" finished-at="2022-03-26T12:33:15 SAST" duration-ms="1" status="PASS">
+        <test-method signature="vehicleLoan2()[pri:0, instance:loans.VehicleLoan1@7722c3c3]" started-at="2022-03-26T22:38:09 SAST" name="vehicleLoan2" finished-at="2022-03-26T22:38:09 SAST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vehicleLoan2 -->
       </class> <!-- loans.VehicleLoan1 -->
       <class name="loans.HomeLoan1">
-        <test-method is-config="true" signature="BeforeClassTest()[pri:0, instance:loans.HomeLoan1@636be97c]" started-at="2022-03-26T12:33:15 SAST" name="BeforeClassTest" finished-at="2022-03-26T12:33:15 SAST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="checkLogFileBefore()[pri:0, instance:loans.HomeLoan1@3d74bf60]" started-at="2022-03-26T22:38:09 SAST" name="checkLogFileBefore" finished-at="2022-03-26T22:38:09 SAST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeClassTest -->
-        <test-method signature="homeLoan1()[pri:0, instance:loans.HomeLoan1@636be97c]" started-at="2022-03-26T12:33:15 SAST" name="homeLoan1" finished-at="2022-03-26T12:33:15 SAST" duration-ms="4" status="PASS">
+        </test-method> <!-- checkLogFileBefore -->
+        <test-method signature="homeLoan1()[pri:0, instance:loans.HomeLoan1@3d74bf60]" started-at="2022-03-26T22:38:09 SAST" name="homeLoan1" finished-at="2022-03-26T22:38:09 SAST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homeLoan1 -->
-        <test-method signature="homeLoan2()[pri:0, instance:loans.HomeLoan1@636be97c]" started-at="2022-03-26T12:33:15 SAST" name="homeLoan2" finished-at="2022-03-26T12:33:15 SAST" duration-ms="1" status="PASS">
+        <test-method signature="homeLoan2()[pri:0, instance:loans.HomeLoan1@3d74bf60]" started-at="2022-03-26T22:38:09 SAST" name="homeLoan2" finished-at="2022-03-26T22:38:09 SAST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homeLoan2 -->
+        <test-method signature="myParameters(java.lang.String)[pri:0, instance:loans.HomeLoan1@3d74bf60]" started-at="2022-03-26T22:38:09 SAST" name="myParameters" finished-at="2022-03-26T22:38:09 SAST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[www.inspired.co.za]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myParameters -->
+        <test-method is-config="true" signature="checkLogFileAfter()[pri:0, instance:loans.HomeLoan1@3d74bf60]" started-at="2022-03-26T22:38:09 SAST" name="checkLogFileAfter" finished-at="2022-03-26T22:38:09 SAST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLogFileAfter -->
       </class> <!-- loans.HomeLoan1 -->
-    </test> <!-- Test -->
-  </suite> <!-- Call all classes under the loans package -->
+    </test> <!-- LoanTests -->
+  </suite> <!-- Testing Parameter on Suite Level -->
 </testng-results>

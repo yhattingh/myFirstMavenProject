@@ -16,7 +16,7 @@
 	      		<class name="annotationTest.Car_loan"/>
 			</classes>
   	</test> <!-- Test -->
-	<test thread-count="5" name="YH Test">
+	<test thread-count="5" name="YH Test1">
 		<groups>
 			<run>
 				<include name="YH Test"/>

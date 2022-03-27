@@ -1,4 +1,4 @@
-package annotations;
+package annotationTest;
 
 import org.testng.annotations.Test;  
 public class Home_loan   

@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="loans.HomeLoan1">
+      <class name="practicalListeners.PracTestListeners">
         <methods>
-          <include name="checkLogFileBefore"/>
-          <include name="checkLogFileAfter"/>
-          <include name="myParameters"/>
+          <include name="testFails1"/>
         </methods>
-      </class> <!-- loans.HomeLoan1 -->
+      </class> <!-- practicalListeners.PracTestListeners -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

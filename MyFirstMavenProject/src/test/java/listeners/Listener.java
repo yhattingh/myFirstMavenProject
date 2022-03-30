@@ -1,0 +1,50 @@
+package listeners;
+
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+
+public class Listener implements ITestListener{
+
+	@Override
+	public void onTestStart(ITestResult result) {
+		// TODO Auto-generated method stub
+		ITestListener.super.onTestStart(result);
+		System.out.println("LISTENERS: onTestStart " + result.getTestClass() + " " + "Test/method name: " + result.getName());
+	}
+
+	@Override
+	public void onTestSuccess(ITestResult result) {
+		// TODO Auto-generated method stub
+		ITestListener.super.onTestSuccess(result);
+		System.out.println("LISTENERS: onTestSuccess " + "Class: " + result.getTestClass() + " " + "Test/method name: " + result.getName());
+	}
+
+	@Override
+	public void onTestFailure(ITestResult result) {
+		// TODO Auto-generated method stub
+		ITestListener.super.onTestFailure(result);
+		System.out.println("LISTENERS: onTestFailure " + "Class: " + result.getTestClass() + " " + "Test/method name: " + result.getName());
+	}
+
+	@Override
+	public void onTestSkipped(ITestResult result) {
+		// TODO Auto-generated method stub
+		ITestListener.super.onTestSkipped(result); // result is an object
+		System.out.println("LISTENERS: onTestSkipped" + "Class: " + result.getTestClass() + " " + "Test/method name: " + result.getName());
+	}
+
+	@Override
+	public void onStart(ITestContext context) {
+		// TODO Auto-generated method stub
+		ITestListener.super.onStart(context); // context is an object
+		System.out.println("LISTENERS: onStart " + "Class: " + context.getName());
+	}
+
+	@Override
+	public void onFinish(ITestContext context) {
+		// TODO Auto-generated method stub
+		ITestListener.super.onFinish(context);
+		System.out.println("LISTENERS: onFinish " + "Class: " + context.getName());
+	}
+}

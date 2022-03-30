@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      	<class name="annotations.TestClass1"/>
-		<class name="annotations.TestClass2"/>
-		<class name="annotations.TestClass3"/>
+      	<class name="annotationTest.TestClass1"/>
+		<class name="annotationTest.TestClass2"/>
+		<class name="annotationTest.TestClass3"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

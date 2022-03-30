@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <listeners>
+    <listener class-name="practicalListeners.ListenerForPrac"/>
+  </listeners>
+  <test thread-count="5" name="Test - practical on Listeners(failed)">
     <classes>
-      <class name="dataProviders.HomeLoan1FraudTest">
+      <class name="practicalListeners.PracTestListeners">
         <methods>
-          <include name="homeLoan1FraudTest" invocation-numbers="0 1 2"/>
+          <include name="skippedTest1"/>
+          <include name="testFails2"/>
+          <include name="skippedTest2"/>
+          <include name="testFails1"/>
         </methods>
-      </class> <!-- dataProviders.HomeLoan1FraudTest -->
+      </class> <!-- practicalListeners.PracTestListeners -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test - practical on Listeners(failed) -->
 </suite> <!-- Failed suite [Suite] -->

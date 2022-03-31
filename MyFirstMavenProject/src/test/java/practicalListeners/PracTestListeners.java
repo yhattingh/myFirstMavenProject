@@ -26,6 +26,11 @@ public class PracTestListeners {
 	public void testFails2() {
 		Assert.assertTrue(false);
 	}
+		
+	@Test
+	public void testFails3() {
+	Assert.assertFalse(true);
+	}
 	
 	@Test(groups = {"Skipped Tests"})
 	public void skippedTest1() {

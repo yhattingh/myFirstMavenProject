@@ -1,101 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="2" failed="2" skipped="2">
+<testng-results ignored="9" total="17" passed="6" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-30T17:29:15 SAST" name="Suite" finished-at="2022-03-30T17:29:15 SAST" duration-ms="84">
+  <suite started-at="2022-03-31T18:15:09 SAST" name="Suite" finished-at="2022-03-31T18:15:09 SAST" duration-ms="64">
     <groups>
-      <group name="Skipped Tests">
-        <method signature="PracTestListeners.skippedTest1()[pri:0, instance:practicalListeners.PracTestListeners@48aaecc3]" name="skippedTest1" class="practicalListeners.PracTestListeners"/>
-        <method signature="PracTestListeners.skippedTest2()[pri:0, instance:practicalListeners.PracTestListeners@48aaecc3]" name="skippedTest2" class="practicalListeners.PracTestListeners"/>
-      </group> <!-- Skipped Tests -->
+      <group name="Regression">
+        <method signature="HomeLoan1.failedTest()[pri:0, instance:loans.HomeLoan1@1ddf84b8]" name="failedTest" class="loans.HomeLoan1"/>
+        <method signature="HomeLoan1.homeLoan2()[pri:0, instance:loans.HomeLoan1@1ddf84b8]" name="homeLoan2" class="loans.HomeLoan1"/>
+        <method signature="HomeLoan1.skippedTest()[pri:0, instance:loans.HomeLoan1@1ddf84b8]" name="skippedTest" class="loans.HomeLoan1"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="HomeLoan1.homeLoan1()[pri:0, instance:loans.HomeLoan1@1ddf84b8]" name="homeLoan1" class="loans.HomeLoan1"/>
+        <method signature="HomeLoan2.homeLoan3()[pri:0, instance:loans.HomeLoan2@4ac3c60d]" name="homeLoan3" class="loans.HomeLoan2"/>
+        <method signature="PersonalLoan1.personalLoan2()[pri:0, instance:loans.PersonalLoan1@4facf68f]" name="personalLoan2" class="loans.PersonalLoan1"/>
+        <method signature="VehicleLoan1.vehicleLoan2()[pri:0, instance:loans.VehicleLoan1@41e36e46]" name="vehicleLoan2" class="loans.VehicleLoan1"/>
+        <method signature="VehicleLoan2.vehicleLoan4()[pri:0, instance:loans.VehicleLoan2@15c43bd9]" name="vehicleLoan4" class="loans.VehicleLoan2"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2022-03-30T17:29:15 SAST" name="Test - practical on Listeners" finished-at="2022-03-30T17:29:15 SAST" duration-ms="84">
-      <class name="practicalListeners.PracTestListeners">
-        <test-method signature="skippedTest1()[pri:0, instance:practicalListeners.PracTestListeners@48aaecc3]" started-at="2022-03-30T17:29:15 SAST" name="skippedTest1" finished-at="2022-03-30T17:29:15 SAST" duration-ms="9" status="SKIP">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[This test was skipped - 1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: This test was skipped - 1
-at practicalListeners.PracTestListeners.skippedTest1(PracTestListeners.java:32)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+    <test started-at="2022-03-31T18:15:09 SAST" name="Test Name: Loan Tests" finished-at="2022-03-31T18:15:09 SAST" duration-ms="64">
+      <class name="loans.HomeLoan2">
+        <test-method signature="homeLoan3()[pri:0, instance:loans.HomeLoan2@4ac3c60d]" started-at="2022-03-31T18:15:09 SAST" name="homeLoan3" finished-at="2022-03-31T18:15:09 SAST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- skippedTest1 -->
-        <test-method signature="skippedTest2()[pri:0, instance:practicalListeners.PracTestListeners@48aaecc3]" started-at="2022-03-30T17:29:15 SAST" name="skippedTest2" finished-at="2022-03-30T17:29:15 SAST" duration-ms="2" status="SKIP">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[This test was  skipped - 2]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: This test was  skipped - 2
-at practicalListeners.PracTestListeners.skippedTest2(PracTestListeners.java:37)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+        </test-method> <!-- homeLoan3 -->
+      </class> <!-- loans.HomeLoan2 -->
+      <class name="loans.PersonalLoan1">
+        <test-method signature="personalLoan2()[pri:0, instance:loans.PersonalLoan1@4facf68f]" started-at="2022-03-31T18:15:09 SAST" name="personalLoan2" finished-at="2022-03-31T18:15:09 SAST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- skippedTest2 -->
-        <test-method signature="testFails1()[pri:0, instance:practicalListeners.PracTestListeners@48aaecc3]" started-at="2022-03-30T17:29:15 SAST" name="testFails1" finished-at="2022-03-30T17:29:15 SAST" duration-ms="5" status="FAIL">
+        </test-method> <!-- personalLoan2 -->
+      </class> <!-- loans.PersonalLoan1 -->
+      <class name="loans.VehicleLoan2">
+        <test-method signature="vehicleLoan4()[pri:0, instance:loans.VehicleLoan2@15c43bd9]" started-at="2022-03-31T18:15:09 SAST" name="vehicleLoan4" finished-at="2022-03-31T18:15:09 SAST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vehicleLoan4 -->
+      </class> <!-- loans.VehicleLoan2 -->
+      <class name="loans.VehicleLoan1">
+        <test-method signature="vehicleLoan2()[pri:0, instance:loans.VehicleLoan1@41e36e46]" started-at="2022-03-31T18:15:09 SAST" name="vehicleLoan2" finished-at="2022-03-31T18:15:09 SAST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vehicleLoan2 -->
+      </class> <!-- loans.VehicleLoan1 -->
+      <class name="loans.HomeLoan1">
+        <test-method signature="failedTest()[pri:0, instance:loans.HomeLoan1@1ddf84b8]" started-at="2022-03-31T18:15:09 SAST" name="failedTest" finished-at="2022-03-31T18:15:09 SAST" duration-ms="9" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -106,7 +54,7 @@ at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertTrue(Assert.java:45)
 at org.testng.Assert.assertTrue(Assert.java:55)
-at practicalListeners.PracTestListeners.testFails1(PracTestListeners.java:22)
+at loans.HomeLoan1.failedTest(HomeLoan1.java:36)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -140,19 +88,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFails1 -->
-        <test-method signature="testFails2()[pri:0, instance:practicalListeners.PracTestListeners@48aaecc3]" started-at="2022-03-30T17:29:15 SAST" name="testFails2" finished-at="2022-03-30T17:29:15 SAST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- failedTest -->
+        <test-method signature="homeLoan1()[pri:0, instance:loans.HomeLoan1@1ddf84b8]" started-at="2022-03-31T18:15:09 SAST" name="homeLoan1" finished-at="2022-03-31T18:15:09 SAST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLoan1 -->
+        <test-method signature="homeLoan2()[pri:0, instance:loans.HomeLoan1@1ddf84b8]" started-at="2022-03-31T18:15:09 SAST" name="homeLoan2" finished-at="2022-03-31T18:15:09 SAST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLoan2 -->
+        <test-method signature="skippedTest()[pri:0, instance:loans.HomeLoan1@1ddf84b8]" started-at="2022-03-31T18:15:09 SAST" name="skippedTest" finished-at="2022-03-31T18:15:09 SAST" duration-ms="1" status="SKIP">
+          <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[this is the skippedTest method]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at practicalListeners.PracTestListeners.testFails2(PracTestListeners.java:27)
+              <![CDATA[org.testng.SkipException: this is the skippedTest method
+at loans.HomeLoan1.skippedTest(HomeLoan1.java:31)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -183,19 +135,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFails2 -->
-        <test-method signature="testPasses1()[pri:0, instance:practicalListeners.PracTestListeners@48aaecc3]" started-at="2022-03-30T17:29:15 SAST" name="testPasses1" finished-at="2022-03-30T17:29:15 SAST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPasses1 -->
-        <test-method signature="testPasses2()[pri:0, instance:practicalListeners.PracTestListeners@48aaecc3]" started-at="2022-03-30T17:29:15 SAST" name="testPasses2" finished-at="2022-03-30T17:29:15 SAST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPasses2 -->
-      </class> <!-- practicalListeners.PracTestListeners -->
-    </test> <!-- Test - practical on Listeners -->
+        </test-method> <!-- skippedTest -->
+      </class> <!-- loans.HomeLoan1 -->
+    </test> <!-- Test Name: Loan Tests -->
   </suite> <!-- Suite -->
 </testng-results>

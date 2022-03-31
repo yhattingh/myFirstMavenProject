@@ -9,27 +9,23 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test - practical on Listeners</a></td><td class="num">2</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">2</td><td class="num">84</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test Name: Loan Tests</a></td><td class="num">6</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">64</td><td>Regression, Smoke</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test - practical on Listeners &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">practicalListeners.PracTestListeners</td><td><a href="#m0">testFails1</a></td><td rowspan="1">1648654155819</td><td rowspan="1">5</td></tr><tr class="failedeven"><td><a href="#m1">testFails2</a></td><td rowspan="1">1648654155828</td><td rowspan="1">2</td></tr><tr><th colspan="4">Test - practical on Listeners &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">practicalListeners.PracTestListeners</td><td><a href="#m2">skippedTest1</a></td><td rowspan="1">1648654155802</td><td rowspan="1">9</td></tr><tr class="skippedeven"><td><a href="#m3">skippedTest2</a></td><td rowspan="1">1648654155814</td><td rowspan="1">2</td></tr><tr><th colspan="4">Test - practical on Listeners &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">practicalListeners.PracTestListeners</td><td><a href="#m4">testPasses1</a></td><td rowspan="1">1648654155833</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m5">testPasses2</a></td><td rowspan="1">1648654155835</td><td rowspan="1">2</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test Name: Loan Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">loans.HomeLoan1</td><td><a href="#m0">failedTest</a></td><td rowspan="1">1648743309429</td><td rowspan="1">9</td></tr><tr><th colspan="4">Test Name: Loan Tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">loans.HomeLoan1</td><td><a href="#m1">skippedTest</a></td><td rowspan="1">1648743309447</td><td rowspan="1">1</td></tr><tr><th colspan="4">Test Name: Loan Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">loans.HomeLoan1</td><td><a href="#m2">homeLoan1</a></td><td rowspan="1">1648743309442</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m3">homeLoan2</a></td><td rowspan="1">1648743309445</td><td rowspan="1">1</td></tr><tr class="passedodd"><td rowspan="1">loans.HomeLoan2</td><td><a href="#m4">homeLoan3</a></td><td rowspan="1">1648743309453</td><td rowspan="1">2</td></tr><tr class="passedeven"><td rowspan="1">loans.PersonalLoan1</td><td><a href="#m5">personalLoan2</a></td><td rowspan="1">1648743309456</td><td rowspan="1">1</td></tr><tr class="passedodd"><td rowspan="1">loans.VehicleLoan1</td><td><a href="#m6">vehicleLoan2</a></td><td rowspan="1">1648743309458</td><td rowspan="1">2</td></tr><tr class="passedeven"><td rowspan="1">loans.VehicleLoan2</td><td><a href="#m7">vehicleLoan4</a></td><td rowspan="1">1648743309462</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>Test - practical on Listeners</h2><h3 id="m0">practicalListeners.PracTestListeners#testFails1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at practicalListeners.PracTestListeners.testFails1(PracTestListeners.java:22)
+<h2>Test Name: Loan Tests</h2><h3 id="m0">loans.HomeLoan1#failedTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at loans.HomeLoan1.failedTest(HomeLoan1.java:36)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">practicalListeners.PracTestListeners#testFails2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at practicalListeners.PracTestListeners.testFails2(PracTestListeners.java:27)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">practicalListeners.PracTestListeners#skippedTest1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: This test was skipped - 1
-	at practicalListeners.PracTestListeners.skippedTest1(PracTestListeners.java:32)
+<h3 id="m1">loans.HomeLoan1#skippedTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: this is the skippedTest method
+	at loans.HomeLoan1.skippedTest(HomeLoan1.java:31)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">practicalListeners.PracTestListeners#skippedTest2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: This test was  skipped - 2
-	at practicalListeners.PracTestListeners.skippedTest2(PracTestListeners.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">practicalListeners.PracTestListeners#testPasses1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">practicalListeners.PracTestListeners#testPasses2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">loans.HomeLoan1#homeLoan1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">loans.HomeLoan1#homeLoan2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">loans.HomeLoan2#homeLoan3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">loans.PersonalLoan1#personalLoan2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">loans.VehicleLoan1#vehicleLoan2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">loans.VehicleLoan2#vehicleLoan4</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

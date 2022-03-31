@@ -5,7 +5,7 @@
     <classes>
       <class name="practicalListeners.PracTestListeners">
         <methods>
-          <include name="testFails1"/>
+          <include name="testFails3"/>
         </methods>
       </class> <!-- practicalListeners.PracTestListeners -->
     </classes>
